@@ -1,7 +1,5 @@
-# gui.py
 import tkinter as tk
 from tkinter import ttk
-from experta import Fact
 
 from diagnosis_rules import NeurologicalDiagnosis, Symptom
 
@@ -13,7 +11,6 @@ def run_expert_system(symptom1, symptom2, symptom3):
     engine = NeurologicalDiagnosis()
     engine.reset()
 
-    # Llama al método get() para obtener el valor seleccionado del Combobox
     engine.declare(Symptom(name=symptom1.get()))
     engine.declare(Symptom(name=symptom2.get()))
     engine.declare(Symptom(name=symptom3.get()))
@@ -50,12 +47,14 @@ window = tk.Tk()
 window.title("Sistema Experto de Diagnóstico Neurológico")
 window.geometry("500x300")
 
-# Crear estilo para mejorar la apariencia
+subtitulo = tk.Label(
+    text="Taller desarrollado por: Britne Vargas y Sergio Quintana", font=("Helvetica", 14))
+subtitulo.pack(pady=10)
+
 style = ttk.Style()
 style.configure('TButton', font=('Helvetica', 12))
 style.configure('TLabel', font=('Helvetica', 14), foreground='blue')
 
-# Crear widgets ComboBox
 symptoms = [
     'agitación', 'alucinaciones', 'aura visual', 'cambios de personalidad',
     'convulsiones', 'desorientación', 'debilidad muscular', 'dificultad para respirar',
