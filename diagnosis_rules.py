@@ -1,17 +1,16 @@
-from dataclasses import Field
-from experta import Fact, Rule, KnowledgeEngine, AND, OR
+from experta import Fact, Rule, KnowledgeEngine, AND, OR, Field
 
 
 class Symptom(Fact):
-    name = Field(str, mandatory=True)
-    severity = Field(int, mandatory=True)
-    duration = Field(int, mandatory=True)
+    name = Field(str)
+    severity = Field(int)
+    duration = Field(int)
     pass
 
 
 class NeurologicalDisorder(Fact):
-    name = Field(str, mandatory=True)
-    probability = Field(float, mandatory=True)
+    name = Field(str)
+    probability = Field(float)
     pass
 
 
