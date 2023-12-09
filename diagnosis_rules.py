@@ -1,5 +1,3 @@
-import tkinter as tk
-from tkinter import ttk
 from experta import Fact, Rule, KnowledgeEngine, AND, OR, Field, NOT
 
 
@@ -101,7 +99,7 @@ class NeurologicalDiagnosis(KnowledgeEngine):
 # Interfaz gráfica
 
 
-def runExpertSystem(symptom1, symptom2, symptom3):
+""" def runExpertSystem(symptom1, symptom2, symptom3):
     print("Síntomas ingresados:", symptom1, symptom2, symptom3)
 
     engine = NeurologicalDiagnosis()
@@ -174,4 +172,4 @@ resultLabel = tk.Label(window, text="")
 resultLabel.pack()
 
 # Iniciar la aplicación
-window.mainloop()
+window.mainloop() """
