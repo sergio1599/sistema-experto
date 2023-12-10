@@ -19,8 +19,8 @@ class NeurologicalDiagnosis(KnowledgeEngine):
     @Rule(
         OR(
             Symptom(name='desorientacion'),
-            Symptom(name='dificultad_para_resolver_problemas'),
-            Symptom(name='perdida_de_memoria')
+            Symptom(name='dificultad para resolver problemas'),
+            Symptom(name='perdida de memoria')
         ),
         NOT(NeurologicalDisorder(name='Alzheimer'))
     )
@@ -32,9 +32,9 @@ class NeurologicalDiagnosis(KnowledgeEngine):
 
     @Rule(
         OR(
-            Symptom(name='movimientos_involuntarios'),
-            Symptom(name='rigidez_muscular'),
-            Symptom(name='temblor_en_las_manos')
+            Symptom(name='movimientos involuntarios'),
+            Symptom(name='rigidez muscular'),
+            Symptom(name='temblor en las manos')
         ),
         NOT(NeurologicalDisorder(name='Parkinson'))
     )
@@ -46,8 +46,8 @@ class NeurologicalDiagnosis(KnowledgeEngine):
     @Rule(
         OR(
             Symptom(name='convulsiones'),
-            Symptom(name='perdida_de_conciencia'),
-            Symptom(name='aura_visual')
+            Symptom(name='perdida de conciencia'),
+            Symptom(name='aura visual')
         ),
         NOT(NeurologicalDisorder(name='Epilepsia'))
     )
@@ -58,9 +58,9 @@ class NeurologicalDiagnosis(KnowledgeEngine):
 
     @Rule(
         OR(
-            Symptom(name='debilidad_muscular'),
-            Symptom(name='dolor_muscular'),
-            Symptom(name='dificultad_para_respirar')
+            Symptom(name='debilidad muscular'),
+            Symptom(name='dolor muscular'),
+            Symptom(name='dificultad para respirar')
         ),
         NOT(NeurologicalDisorder(name='Miastenia gravis'))
     )
@@ -71,7 +71,7 @@ class NeurologicalDiagnosis(KnowledgeEngine):
 
     @Rule(
         OR(
-            Symptom(name='dolor_de_cabeza'),
+            Symptom(name='dolor de cabeza'),
             Symptom(name='nauseas'),
             Symptom(name='vomitos'),
         ),
@@ -86,7 +86,7 @@ class NeurologicalDiagnosis(KnowledgeEngine):
         OR(
             Symptom(name='agitacion'),
             Symptom(name='alucinaciones'),
-            Symptom(name='cambios_de_personalidad')
+            Symptom(name='cambios de personalidad')
         ),
         NOT(NeurologicalDisorder(name='Esquizofrenia'))
 

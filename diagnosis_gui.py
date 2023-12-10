@@ -60,7 +60,7 @@ symptoms = [
     'convulsiones', 'desorientación', 'debilidad muscular', 'dificultad para respirar',
     'dificultad para resolver problemas', 'dolor de cabeza', 'dolor muscular',
     'movimientos involuntarios', 'nauseas', 'pérdida de conciencia',
-    'pérdida de memoria', 'rigidez muscular', 'temblor en las manos',
+    'perdida de memoria', 'rigidez muscular', 'temblor en las manos',
     'vómitos'
 ]
 
