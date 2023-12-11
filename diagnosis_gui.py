@@ -45,7 +45,7 @@ def on_diagnose_button_click():
 # Crear la ventana principal
 window = tk.Tk()
 window.title("Sistema Experto de Diagnóstico Neurológico")
-window.geometry("500x300")
+window.geometry("500x350")
 
 subtitulo = tk.Label(
     text="Taller desarrollado por: Britne Vargas y Sergio Quintana", font=("Helvetica", 14))
@@ -64,11 +64,23 @@ symptoms = [
     'vómitos'
 ]
 
+symptom1_label = ttk.Label(window, text="Síntoma 1",
+                           font=('Helvetica', 10), foreground='black')
+symptom1_label.pack(pady=1)
+
 symptom1_combobox = ttk.Combobox(window, values=symptoms)
 symptom1_combobox.pack(pady=10)
 
+symptom2_label = ttk.Label(window, text="Síntoma 2",
+                           font=('Helvetica', 10), foreground='black')
+symptom2_label.pack(pady=1)
+
 symptom2_combobox = ttk.Combobox(window, values=symptoms)
 symptom2_combobox.pack(pady=10)
+
+symptom3_label = ttk.Label(window, text="Síntoma 3",
+                           font=('Helvetica', 10), foreground='black')
+symptom3_label.pack(pady=1)
 
 symptom3_combobox = ttk.Combobox(window, values=symptoms)
 symptom3_combobox.pack(pady=10)

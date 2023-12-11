@@ -3,13 +3,10 @@ from experta import Fact, Rule, KnowledgeEngine, AND, OR, Field, NOT
 
 class Symptom(Fact):
     name = Field(str)
-    severity = Field(int)
-    duration = Field(int)
 
 
 class NeurologicalDisorder(Fact):
     name = Field(str)
-    probability = Field(float)
 
 
 class NeurologicalDiagnosis(KnowledgeEngine):
